@@ -75,7 +75,7 @@
                         <a class="nav-link" href="/G1_Proyecto_BioVidaCR/Nav/registroMascota.php">Registro de Mascotas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/G1_Proyecto_BioVidaCRNav/grupoApoyo.php">Grupos de Apoyo</a>
+                        <a class="nav-link" href="/G1_Proyecto_BioVidaCR/Nav/grupoApoyo.php">Grupos de Apoyo</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/G1_Proyecto_BioVidaCR/Nav/contactoAyuda.php">Contactos de Ayuda</a>
