@@ -95,7 +95,7 @@
                         <h5 class="card-title">Jaguar</h5>
                         <h6 class="card-subtitle mb-2 text-muted">Panthera onca</h6>
                         <p class="card-text">El felino más grande de América, conocido por su pelaje manchado y su poderosa mordida.</p>
-                        <a href="#" class="btn btn-success">Ver más</a>
+                        <a href="/G1_Proyecto_BioVidaCR/animales/jaguar.php" class="btn btn-success">Ver más</a>
                     </div>
                 </div>
             </div>
@@ -106,7 +106,7 @@
                         <h5 class="card-title">Perezoso de tres dedos</h5>
                         <h6 class="card-subtitle mb-2 text-muted">Bradypus variegatus</h6>
                         <p class="card-text">Mamífero arbóreo conocido por su lentitud y su pelaje verdoso debido a las algas.</p>
-                        <a href="#" class="btn btn-success">Ver más</a>
+                        <a href="/G1_Proyecto_BioVidaCR/animales/perezoso.php" class="btn btn-success">Ver más</a>
                     </div>
                 </div>
             </div>
@@ -117,7 +117,7 @@
                         <h5 class="card-title">Tucán pico arcoíris</h5>
                         <h6 class="card-subtitle mb-2 text-muted">Ramphastos sulfuratus</h6>
                         <p class="card-text">Ave icónica de Costa Rica, famosa por su pico colorido y su canto distintivo.</p>
-                        <a href="#" class="btn btn-success">Ver más</a>
+                        <a href="/G1_Proyecto_BioVidaCR/animales/tucan.php"  class="btn btn-success">Ver más</a>
                     </div>
                 </div>
             </div>
@@ -128,7 +128,7 @@
                         <h5 class="card-title">Mono ardilla</h5>
                         <h6 class="card-subtitle mb-2 text-muted">Saimiri oerstedii</h6>
                         <p class="card-text">Pequeño primate conocido por su agilidad y su pelaje naranja brillante.</p>
-                        <a href="#" class="btn btn-success">Ver más</a>
+                        <a href="/G1_Proyecto_BioVidaCR/animales/mono.php"  class="btn btn-success">Ver más</a>
                     </div>
                 </div>
             </div>
@@ -139,7 +139,7 @@
                         <h5 class="card-title">Lapa roja</h5>
                         <h6 class="card-subtitle mb-2 text-muted">Ara macao</h6>
                         <p class="card-text">Ave colorida y ruidosa, conocida por su inteligencia y su capacidad para imitar sonidos.</p>
-                        <a href="#" class="btn btn-success">Ver más</a>
+                        <a href="/G1_Proyecto_BioVidaCR/animales/lapa.php"class="btn btn-success">Ver más</a>
                     </div>
                 </div>
             </div>
@@ -150,7 +150,7 @@
                         <h5 class="card-title">Rana venenosa roja</h5>
                         <h6 class="card-subtitle mb-2 text-muted">Oophaga granulifera</h6>
                         <p class="card-text">Anfibio pequeño y venenoso, conocido por su coloración roja y su piel tóxica.</p>
-                        <a href="#" class="btn btn-success">Ver más</a>
+                        <a href="/G1_Proyecto_BioVidaCR/animales/rana.php" class="btn btn-success">Ver más</a>
                     </div>
                 </div>
             </div>
