@@ -95,29 +95,30 @@
                         Datos de la Mascota
                     </div>
                     <div class="card-body">
-                        <form>
+                        <form id="form_mascota" action='../mascota_controller.php' method='POST'>
+                            <input type='hidden' name='action' value='create'>
                             <div class="form-group">
                                 <label for="nombreMascota">Nombre de la Mascota</label>
-                                <input type="text" class="form-control" id="nombreMascota" placeholder="Ingresa el nombre de tu mascota">
+                                <input type="text" class="form-control" name="nombre_mascota" placeholder="Ingresa el nombre de tu mascota">
                             </div>
                             <div class="form-group">
                                 <label for="genero">Género de la Mascota</label>
-                                <select class="form-control" id="genero">
-                                    <option value="macho">Macho</option>
-                                    <option value="hembra">Hembra</option>
+                                <select class="form-control" name="genero_animal">
+                                    <option value="Macho">Macho</option>
+                                    <option value="Hembra">Hembra</option>
                                 </select>
                             </div>
                             <div class="form-group">
                                 <label for="tipoMascota">Tipo de Mascota</label>
-                                <input type="text" class="form-control" id="tipoMascota" placeholder="Ej: Perro, Gato, etc.">
+                                <input type="text" class="form-control" name="tipo_animal" placeholder="Ej: Perro, Gato, etc.">
                             </div>
                             <div class="form-group">
-                                <label for="fotoMascota">Foto de la Mascota (Opcional)</label>
-                                <input type="file" class="form-control-file" id="fotoMascota">
+                                <label for="foto">Foto del Mascota (Opcional)</label>
+                                <input type="text" class="form-control" name="foto_mascota" placeholder="Ingresa el link de la foto">
                             </div>
                             <div class="form-group">
                                 <label for="comoAdopto">¿Cómo Adoptaste a tu Mascota?</label>
-                                <textarea class="form-control" id="comoAdopto" rows="4" placeholder="Describe cómo adoptaste a tu mascota"></textarea>
+                                <textarea class="form-control" name="lugar_encontrado" rows="4" placeholder="Describe cómo adoptaste a tu mascota"></textarea>
                             </div>
                             <div class="form-group">
                                 <label for="nombrePersona">Nombre de la Persona que Registra</label>
@@ -128,7 +129,7 @@
                                 <input type="tel" class="form-control" id="telefono" placeholder="Ingresa tu número de teléfono">
                             </div>
                             <div class="form-group form-check">
-                                <input type="checkbox" class="form-check-input" id="acuerdo">
+                                <input type="checkbox" class="form-check-input" name="acuerdo_compromiso">
                                 <label class="form-check-label" for="acuerdo">Me comprometo a cuidar y velar por la salud y el bienestar de mi mascota.</label>
                             </div>
                             <button type="submit" class="btn btn-primary btn-block">Registrar Mascota</button>
