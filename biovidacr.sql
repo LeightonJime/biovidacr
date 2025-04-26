@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 26, 2025 at 04:08 AM
+-- Generation Time: Apr 26, 2025 at 05:39 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -101,6 +101,13 @@ CREATE TABLE `registro_mascota` (
   `acuerdo_compromiso` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Dumping data for table `registro_mascota`
+--
+
+INSERT INTO `registro_mascota` (`id_mascota`, `nombre_mascota`, `tipo_animal`, `genero_animal`, `lugar_encontrado`, `foto_mascota`, `detalle_adopcion`, `acuerdo_compromiso`) VALUES
+(1, 'Prueba gato', 'Gato', 'Macho', 'Prueba registro mascota', 'https://inaturalist-open-data.s3.amazonaws.com/photos/129658776/original.jpg', '', 0);
+
 -- --------------------------------------------------------
 
 --
@@ -130,6 +137,14 @@ CREATE TABLE `reportar_emergencia` (
   `foto_reporte` text NOT NULL,
   `contacto_reporte` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `reportar_emergencia`
+--
+
+INSERT INTO `reportar_emergencia` (`id_reporte`, `ubicacion_reporte`, `persona_reporta`, `animal_reporte`, `causa_reporte`, `foto_reporte`, `contacto_reporte`) VALUES
+(1, 'Cartago', 'Prueba', 'Gato', 'Reporte de prueba', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKhJ9vY-WJviH34cgDfbG2Hn_cBf0t5BBmaWrmH--NzBO3pjGP6hjV7pb8s958ug9K7p6iR-3vz6nlw7c4i5ZdMw', '+506 8888 8888'),
+(2, 'San José', 'Otra Prueba', 'Gato', 'Otro reporte de prueba', '', '+506 7777 7777');
 
 --
 -- Indexes for dumped tables
@@ -174,9 +189,15 @@ ALTER TABLE `contactos_ayuda`
 --
 ALTER TABLE `grupos_ayuda`
   MODIFY `id_grupo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
-COMMIT;
 
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+--
+-- AUTO_INCREMENT for table `registro_mascota`
+--
+ALTER TABLE `registro_mascota`
+  MODIFY `id_mascota` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
+--
+-- AUTO_INCREMENT for table `reportar_emergencia`
+--
+ALTER TABLE `reportar_emergencia`
+  MODIFY `id_reporte` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
