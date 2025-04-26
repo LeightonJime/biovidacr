@@ -1,14 +1,13 @@
 <?php
-$host = 'localhost'; 
-$usuario = 'root'; 
+$host = 'localhost';
+$usuario = 'root';
 $contrasena = '';
-$base_de_datos = 'biovidacr';
+$dbname  = 'biovidacr';
 
-$conn = new mysqli($host, $usuario, $contrasena, $base_de_datos);
-
-if ($conn->connect_error) {
-    die("Error de conexión a la base de datos: " . $conn->connect_error);
+try {
+    $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $usuario, $contrasena);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    die("Error de conexión a la base de datos: " . $e->getMessage());
 }
-
-$conn->set_charset("utf8");
 ?>
