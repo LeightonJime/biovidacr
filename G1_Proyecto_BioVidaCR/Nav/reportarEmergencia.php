@@ -83,48 +83,54 @@
     <main class="container mt-5">
         <div class="row justify-content-center">
             <div class="col-md-8">
-                <div class="text-center mb-5">
-                    <h2>Reportar Emergencia</h2>
-                    <p class="lead">Completa el formulario para reportar una emergencia de vida silvestre.</p>
-                </div>
+            <div class="row justify-content-between align-items-center mb-4">
+                    <div class="col-md-8 text-center mx-auto">
+                  <h2 class="mb-0">Reportar Emergencia</h2>
+                 </div>
+             <div class="col-md-3 text-left">
+              <a href="/G1_Proyecto_BioVidaCR/Extras/verReporte.php" class="btn btn-outline-primary">Ver Reportes</a>
+               </div>
+               </div>
+                 <p class="lead text-center">Completa el formulario para reportar una emergencia de vida silvestre.</p>
+
                 <div class="card">
                     <div class="card-header text-center">
                         Detalles del Reporte
                     </div>
                     <div class="card-body">
-                        <form>
+                        <form id="form_emergencia" action='../emergencia_controller.php' method='POST'>
+                            <input type='hidden' name='action' value='create'>
                             <div class="form-group">
                                 <label for="nombre">Nombre de la Persona que Reporta</label>
-                                <input type="text" class="form-control" id="persona_reporta" placeholder="Ingresa tu nombre">
+                                <input type="text" class="form-control" name="persona_reporta" placeholder="Ingresa tu nombre">
                             </div>
                             <div class="form-group">
-                              id="form_emergencia" action='../emergencia_controller.php' method='POST' 
-                            <input type='hidden' name='action' value='create'>  <label for="telefono">Número de Teléfono</label>
-                                <input type="tel" class="form-control" id="contacto_reporte" placeholder="Ingresa tu número de teléfono">
+                                <label for="telefono">Número de Teléfono</label>
+                                <input type="tel" class="form-control" name="contacto_reporte" placeholder="Ingresa tu número de teléfono">
                             </div>
                             <div class="form-group">
-name                                <label for="causa">Causa del Reporte</label>
-                                <textarea class="form-control" id="causa_reporte" rows="4" placeholder="Describe la emergencia"></textarea>
+                                <label for="causa">Causa del Reporte</label>
+                                <textarea class="form-control" name="causa_reporte" rows="4" placeholder="Describe la emergencia"></textarea>
                             </div>
                             <div class="form-group">
-name                                <label for="animal">Tipo de Animal</label>
-                                <input type="text" class="form-control" id="animal_reporte" placeholder="Especifica el tipo de animal">
+                                <label for="animal">Tipo de Animal</label>
+                                <input type="text" class="form-control" name="animal_reporte" placeholder="Especifica el tipo de animal">
                             </div>
                             <div class="form-group">
-causa_repnamete                                <label for="ubicacion">Ubicación del Reporte</label>
-                                <input type="text" class="form-control" id="ubicacion_reporte" placeholder="Ingresa la ubicación">
+                                <label for="ubicacion">Ubicación del Reporte</label>
+                                <input type="text" class="form-control" name="ubicacion_reporte" placeholder="Ingresa la ubicación">
                             </div>
-                            <div class="form-group">
-name                                <label for="foto">Foto del Reporte (Opcional)</label>
-                                <input type="file" class="form-control-file" id="foto">
-                            </div>
-                            <button type="submit" class="btn btn-danger namen-block">Enviar Reporte</button>
-                        </form>
-
                             <div class="form-group">
                                 <label for="foto">Foto del Reporte (Opcional)</label>
                                 <input type="text" class="form-control" name="foto_reporte" placeholder="Ingresa el link de la foto">
-                            </div>    </main>
+                            </div>
+                            <button type="submit" class="btn btn-danger btn-block">Enviar Reporte</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
     <footer class="footer text-center py-3">
         <p>© <?php echo date("Y"); ?> Todos los derechos reservados. BioVidaCR </p>
