@@ -10,7 +10,7 @@ class Usuario {
     }
 
     public function crearUsuario($nombre, $email, $usuario, $password_hash) {
-        $query = "INSERT INTO " . $this->table_name . " (nombreP_usuario, correo_electronico, nombreD_usuario, contraseña, rol) VALUES (?, ?, ?, ?, 'usuario')";
+        $query = "INSERT INTO " . $this->table_name . " (nombreP_usuario, correo_electronico, nombreD_usuario, contrasena, rol) VALUES (?, ?, ?, ?, 'usuario')";
 
         $stmt = $this->conn->prepare($query);
         $stmt->bind_param("ssss", $nombre, $email, $usuario, $password_hash);
@@ -23,7 +23,7 @@ class Usuario {
     }
 
     public function obtenerUsuarioPorUsuario($usuario) {
-        $query = "SELECT id_usuario, contraseña, rol FROM " . $this->table_name . " WHERE nombreD_usuario = ?";
+        $query = "SELECT id_usuario, contrasena, rol FROM " . $this->table_name . " WHERE nombreD_usuario = ?";
 
         $stmt = $this->conn->prepare($query);
         $stmt->bind_param("s", $usuario);

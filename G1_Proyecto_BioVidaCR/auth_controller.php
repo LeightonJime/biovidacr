@@ -49,8 +49,8 @@ class AuthController {
 
         if ($usuarioData) {
             // Verificar la contraseña hasheada
-            if (password_verify($clave, $usuarioData['contraseña'])) {
-                // La contraseña es correcta, devolver los datos del usuario (incluyendo el rol)
+            if (password_verify($clave, $usuarioData['contrasena'])) {
+                // La contraseña es correcta, devolver los datos del usuario 
                 return $usuarioData;
             } else {
                 return "Nombre de usuario o contraseña incorrectos.";
