@@ -83,10 +83,16 @@
     <main class="container mt-5">
         <div class="row justify-content-center">
             <div class="col-md-8">
-                <div class="text-center mb-5">
-                    <h2>Reportar Emergencia</h2>
-                    <p class="lead">Completa el formulario para reportar una emergencia de vida silvestre.</p>
-                </div>
+            <div class="row justify-content-between align-items-center mb-4">
+                    <div class="col-md-8 text-center mx-auto">
+                  <h2 class="mb-0">Reportar Emergencia</h2>
+                 </div>
+             <div class="col-md-3 text-left">
+              <a href="/G1_Proyecto_BioVidaCR/Extras/verReporte.php" class="btn btn-outline-primary">Ver Reportes</a>
+               </div>
+               </div>
+                 <p class="lead text-center">Completa el formulario para reportar una emergencia de vida silvestre.</p>
+
                 <div class="card">
                     <div class="card-header text-center">
                         Detalles del Reporte
